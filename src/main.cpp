@@ -48,8 +48,6 @@ typedef ostream& (*output_function)  (const ostream & out);
 
 ******************************************************************************/
 
-//typedef ostream& (*anupamdas104_oddity) (const ostream & out);
-
 
 
 //Get File String for specific Location
@@ -83,12 +81,7 @@ int main(int argc, char* argv[] )
 
 	
 	
-	//ostream(test);
 
-    // Calls to output functions
-	//https://stackoverflow.com/questions/4295432/typedef-function-pointer
-
-	//https://www3.ntu.edu.sg/home/ehchua/programming/cpp/cp10_IO.html
     return 0;
 }
 
