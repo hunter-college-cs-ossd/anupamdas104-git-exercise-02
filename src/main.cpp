@@ -7,7 +7,7 @@
   Created on     : October  7, 2018
   Description    : Displays random peculiar facts
   Purpose        : To exercise collaborative source code development
-  Usage          : nuttyfact
+  Usage          : ./oddities oddities.txt
   Build with     : g++ -Wall -g -o oddities  main.cpp
   Modifications  :
   Notes:
