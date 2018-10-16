@@ -45,19 +45,21 @@ typedef ostream& (*output_function) ( ostream & out);
 
 
 
-ostream& anupamdas104_oddity(ostream & out);
+ostream& FrancisXIrizarry_oddity(ostream & out);
 
 
 int main(int argc, char* argv[] )
 {
-	anupamdas104_oddity(cout);
+	output_function FrancisXIrizarry;
+   	FrancisXIrizarry = FrancisXIrizarry_oddity;
+        FrancisXIrizarry(cout);
         return 0;
 
 
 } 
 
 
-ostream& anupamdas104_oddity(ostream & out){
+ostream& FrancisXIrizarry_oddity(ostream & out){
     out<<"Why do they put Braille dots on the keypad of the drive-up ATM?"<<endl;
 	
     return out;
