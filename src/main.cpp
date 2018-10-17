@@ -60,7 +60,7 @@ int main(int argc, char* argv[] )
 }
 
 ostream& shadow12ac_oddity(ostream & out){
-	out << "If a cow laughed, would milk come out her nose?" << endl;
+	out << "Do you need a silencer if you are going to shoot a mime?" << endl;
 	
 	return out;
 }
