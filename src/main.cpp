@@ -58,13 +58,14 @@ ostream& FrancisXIrizarry_oddity(ostream & out);
 
 int main(int argc, char* argv[] )
 {
-  // Calls to output functions
+	
+	output_function FrancisXIrizarry;
+	
+	// Calls to output functions
 	trueFacts(cout);
 	anupamdas104_oddity(cout);
-  
-	output_function FrancisXIrizarry;
-  FrancisXIrizarry = FrancisXIrizarry_oddity;
-  FrancisXIrizarry(cout);
+	FrancisXIrizarry = FrancisXIrizarry_oddity;
+	FrancisXIrizarry(cout);
   
   return 0;
 } 
