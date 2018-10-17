@@ -50,7 +50,7 @@ ostream& trueFacts(ostream & out){
 }
 
 ostream& anupamdas104_oddity(ostream & out){
-	out << "Why are there interstate highways in Hawaii? \n";
+	out << "Why do you need a driver's license to buy liquor when you can't drink and drive? \n";
 	return out;
 }
 
