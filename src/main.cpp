@@ -1,6 +1,6 @@
 /******************************************************************************
   Title          : main.cpp
-  Author         : 
+  Author         : Anupam Das
   Created on     : October  7, 2018
   Description    : Displays random peculiar facts
   Purpose        : To exercise collaborative source code development
@@ -44,15 +44,24 @@ typedef ostream& (*output_function) (ostream & out);
 
 ******************************************************************************/
 
+ostream& trueFacts(ostream & out){
+	out << "This is a collection of strange but true facts. \n";
+	
+	return out;
+}
 
-
-
+ostream& anupamdas104_oddity(ostream & out){
+	out << "Why are there interstate highways in Hawaii? \n";
+	return out;
+}
 
 
 int main(int argc, char* argv[] )
 {
 
     // Calls to output functions
+	trueFacts(cout);
+	anupamdas104_oddity(cout);
 
 
 
