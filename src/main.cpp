@@ -23,28 +23,29 @@
    Oddities are found in the file "oddities.txt" in the project source directory
  
 ******************************************************************************/
- #include <iostream>
- #include <fstream>
- #include <cstdlib>
- #include <cstdio>
- #include <cstring>
- #include <sstream>
 
+#include <iostream>
+#include <fstream>
+#include <cstdlib>
+#include <cstdio>
+#include <cstring>
+#include <sstream>
 
-  using namespace std;
- /******************************************************************************/
- // The syntax of the output function that must be used to print an oddity.
+using namespace std;
+
+/******************************************************************************/
+
+// The syntax of the output function that must be used to print an oddity.
 typedef ostream& (*output_function) ( ostream & out);
- /******************************************************************************
+
+
+/******************************************************************************
         
                         All Function Definitions
- ******************************************************************************/
-//typedef ostream& (*output_function) (const ostream & out);
 
-
+******************************************************************************/
 ostream& trueFacts(ostream & out){
 	out << "This is a collection of strange but true facts. \n";
-	
 	return out;
 }
 
@@ -54,6 +55,7 @@ ostream& anupamdas104_oddity(ostream & out){
 }
 
 ostream& FrancisXIrizarry_oddity(ostream & out);
+ostream& shadow12ac_oddity(ostream & out);
 
 
 int main(int argc, char* argv[] )
@@ -66,6 +68,7 @@ int main(int argc, char* argv[] )
 	anupamdas104_oddity(cout);
 	FrancisXIrizarry = FrancisXIrizarry_oddity;
 	FrancisXIrizarry(cout);
+  shadow12ac_oddity(cout);
   
   return 0;
 } 
@@ -77,5 +80,7 @@ ostream& FrancisXIrizarry_oddity(ostream & out){
 }
 
 
-
-
+ostream& shadow12ac_oddity(ostream & out){
+	out << "Do you need a silencer if you are going to shoot a mime?" << endl;	
+	return out;
+}
