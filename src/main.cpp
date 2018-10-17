@@ -56,7 +56,7 @@ ostream& anupamdas104_oddity(ostream & out){
 
 ostream& FrancisXIrizarry_oddity(ostream & out);
 ostream& shadow12ac_oddity(ostream & out);
-
+ostream& lashana29_oddity(ostream& out);
 
 int main(int argc, char* argv[] )
 {
@@ -69,6 +69,7 @@ int main(int argc, char* argv[] )
 	FrancisXIrizarry = FrancisXIrizarry_oddity;
 	FrancisXIrizarry(cout);
   shadow12ac_oddity(cout);
+	lashana29_oddity(cout);
   
   return 0;
 } 
@@ -82,5 +83,12 @@ ostream& FrancisXIrizarry_oddity(ostream & out){
 
 ostream& shadow12ac_oddity(ostream & out){
 	out << "Do you need a silencer if you are going to shoot a mime?" << endl;	
+	return out;
+}
+
+ostream& lashana29_oddity(ostream& out) {
+	out << "Why is it that when you transport something by car, ";
+	out << "it's called a shipment, but when you transport something by ship, ";
+	out << "it's called cargo?" << endl;
 	return out;
 }
