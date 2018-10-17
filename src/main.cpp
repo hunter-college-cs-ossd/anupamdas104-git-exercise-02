@@ -3,7 +3,7 @@
 
 /******************************************************************************
   Title          : main.cpp
-  Author         : FrancisXIrizarry
+  Author         : Anupam Das
   Created on     : October  7, 2018
   Description    : Displays random peculiar facts
   Purpose        : To exercise collaborative source code development
@@ -42,38 +42,38 @@ typedef ostream& (*output_function) ( ostream & out);
 //typedef ostream& (*output_function) (const ostream & out);
 
 
+ostream& trueFacts(ostream & out){
+	out << "This is a collection of strange but true facts. \n";
+	
+	return out;
+}
 
-
+ostream& anupamdas104_oddity(ostream & out){
+	out << "Why are there interstate highways in Hawaii? \n";
+	return out;
+}
 
 ostream& FrancisXIrizarry_oddity(ostream & out);
 
 
 int main(int argc, char* argv[] )
 {
+  // Calls to output functions
+	trueFacts(cout);
+	anupamdas104_oddity(cout);
+  
 	output_function FrancisXIrizarry;
-   	FrancisXIrizarry = FrancisXIrizarry_oddity;
-        FrancisXIrizarry(cout);
-        return 0;
-
-
+  FrancisXIrizarry = FrancisXIrizarry_oddity;
+  FrancisXIrizarry(cout);
+  
+  return 0;
 } 
-
 
 ostream& FrancisXIrizarry_oddity(ostream & out){
     out<<"Why do they put Braille dots on the keypad of the drive-up ATM?"<<endl;
 	
     return out;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
